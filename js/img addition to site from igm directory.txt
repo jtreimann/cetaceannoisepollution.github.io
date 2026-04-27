@@ -1,0 +1,20 @@
+// Adding Pie Chart img
+const pieDiv = document.getElementById('speciesPie');
+const pieimg = document.createElement('img');
+pieimg.src = './img/cetaceanspecieschart.png'; 
+pieimg.alt = 'Species distribution chart'; //alt text
+pieDiv.appendChild(pieimg);
+
+// adding buffered cargo img
+const bufferDiv = document.getElementById('bufferMaps');
+const cargoimg = document.createElement('img');
+cargoimg.src = './img/WithinCargo.png'; 
+cargoimg.alt = 'Cetaceans within the Cargo Buffer'; //alt text
+bufferDiv.appendChild(cargoimg);
+
+// adding buffered cargo img
+const bufferDiv = document.getElementById('bufferMaps');
+const cargoimg = document.createElement('img');
+cargoimg.src = './img/WithinCargo.png'; 
+cargoimg.alt = 'Cetaceans within the Cargo Buffer'; //alt text
+bufferDiv.appendChild(cargoimg);

@@ -1,0 +1,88 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title>The Impact of Human Maritime Activity on Cetaceans</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        
+        <!--you can also place internal styles here
+        place these within <style> tags-->  
+        
+    </head>
+
+    <body>
+
+        <h1>The Impact of Human Maritime Activity on Cetaceans</h1>
+
+        <br>
+
+        <h2>Undersea Sound and Noise Pollution</h2>
+
+        <br>
+
+        <p>While we may consider being underwater to be a time of peaceful silence, the undersea environment is 
+            flush with constant noise. From acoustic communication between species to the ambient movement of the waves or the patter of raindrops on the surface, marine audiograms show a very loud world under the sea.</p>
+
+        <p>Though, as with most environments in our Anthropocenic age, this is natural order is not without its 
+            human interruption. Increasingly, the presence of human activity, ranging from ships to undersea mining, is 
+            undeniable in the ocean's soundscape. With how vital long-range acoustic communication is to many species, most 
+            recognizably those like the whales and dolphins which make up the cetacean infraorder, the human interruption poses a 
+            significant problem.</p>
+
+        <p>Humans have begun polluting the intangible. Noise pollution is an increasing area of concern 
+            for marine research given the prevalence of maritime trade, travel, and leisure.</p>
+
+        <!--put your external script links here-->
+          <script type="module" src="https://js.arcgis.com/5.0/embeddable-components/"></script>
+
+        <br>
+        <div id="map">
+            <h3>Whale & Ship Traffic</h3>
+            <p1>Utilizing publically available cetacean sightings (obtained via <a href="iNaturalist.org">iNaturalist</a> for the years 2000-2025)  and ship traffic information (limited to passenger, tanker, and cargo classes, obtained via <a href="https://marinecadastre.gov/accessais/">AccessAIS</a>), the overlap of human ship and whale activity an be observed. For full toggle-settings, please utilize the external web-map viewer.</p1>
+
+             <arcgis-embedded-map style="height:600px;width:700px;" item-id="cf84fd1a43044dff8eec01ebc31550ea" theme="light" heading-enabled legend-enabled share-enabled time-zone-label-enabled center="-79.71463087929011,28.173381405280246"scale="4622324.434309" portal-url="https://sjsugis.maps.arcgis.com"></arcgis-embedded-map>
+
+            <br>
+        </div>
+<br>
+        <div id="speciesPie">
+         <p1>The species distribution of cetacean sightings utilised for analysis in the study area.</p1>
+
+        </div>
+
+        <br>
+        <br>
+
+        <h3>Mapping The Impact of Sound</h3>
+        <p>In the above map, the total overlap of the modeled impact of sound, as represented here with frequency-dependent buffers, and cetacean
+            sightings an be observed. For the lower frequency vessel classes, cargo and tanker, 50km buffers were created, while the highest
+            frequency passenger class possessed a 1km buffer by comparison. Of the total 163 observed sightings, 150 lay within range of 
+            the proposed sound-risk area.
+        </p>
+<br>
+
+        <div class="image-container" id="bufferMaps">
+    <img src="img/WithinCargo.png" alt="Cetaceans within the Cargo Buffer">
+    <img src="img/WithinPassenger.png" alt="Cetaceans within the Passenger Buffer">
+    <img src="img/WithinTanker.png" alt="Cetaceans within the Tanker Buffer">
+</div>
+<br>
+        <p>Overall, the most abundant vessel class, the cargo ships, were also the ones which affected the highest number of cetaceans.
+        Of the 150 total cetaceans who fell within any buffer, all were within the range of the 50km sound barrier from a cargo ship,
+        a threshold at which behavioral changes have been observed in porpoises following extreme sounds in the vicinity.
+    </p>
+    <p>The class with the smallest amount of cetaceans impacts, passenger ships, posessed both the lowest buffer size due
+        to comparatively higher frequencies produced by the ship. Only 4 cetaceans were within the 1km buffer range of 
+        passenger class ships.
+    </p>
+    <p>Cargo is an extremely lucrative industry, especially off of the coast of Florida where reported plans for expansion of the cargo
+        shipping capacity are in motion, meaning that the potential adverse impact of sound on cetaceans within the area may only increase
+        further in the future.
+    </p>
+        <script type="text/javascript" src="lib/d3.v7.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
